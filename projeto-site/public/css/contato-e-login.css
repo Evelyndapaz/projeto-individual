@@ -1,7 +1,8 @@
-/* PÁGINA DO CONTATO */
+/* PÁGINA - LOGIN E CADASTRO */
 
+/*CADASTRO*/
 .contato {
-    background-color: #F8FCFFbe;
+    background-color: #ecd7f8af;
 }
 
 .contato .container {
@@ -11,30 +12,31 @@
 
 .contato h1 {
     padding: 40px 0;
+    margin-left: 50px;
 }
 
 .formulario {
     float: left;
+    margin-left: 50px;
     width: 500px;
 }
 
 form label, form p{
     display: block;
     font-size: 20px;
-    margin-bottom:10px ;
+    margin-bottom:10px;
 }
 
 .btn {
     color: white;
-    background-color:  #bf7788;
+    background-color:  purple;
     margin: 20px 0 50px 0;
-    border: 0;
     padding: 10px 20px;
-
+    border-style: solid;
     border-radius: 5px;
+    border-color: rebeccapurple;
     float: left;
     cursor: pointer;
-
     font-family: consolas, monospace;
 }
 
@@ -44,7 +46,12 @@ form label, form p{
 
 .contato img {
     float: right;
-    width: 85%;
+    margin-right: 50px;
+    width: 55%;
+    border-style: ridge;
+    border-color: silver;
+    border-width: 10px;
+    border-radius: 4px;
 }
 
 .input-padrao {
@@ -61,10 +68,11 @@ form label, form p{
     margin-bottom: 30px;
 }
 
-/* PÁGINA DO LOGIN */
-
+/* LOGIN */
+.pag-login .container{
+    margin-bottom: 35px;
+}
 .pag-login {
-    background-color: #F8FCFFbe;
     text-align: center;
     padding: 50px 0;
 }
@@ -80,10 +88,13 @@ form label, form p{
 
 .box-login {
     display: inline-block;
-    background-color: white;
-    box-shadow:  3px 3px 5px 2px #ccc;
+    background-color: whitesmoke;
+    /*box-shadow:  3px 3px 5px 2px #ccc; SOMBREIA O FORM*/
     padding: 60px 20px 0px 20px;
-    border-radius: 20px;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rebeccapurple;
     width: 400px;
 }
 
@@ -92,6 +103,7 @@ form label, form p{
     float: none;
     margin: auto;
 }
+
 
 /* EXTRA */
 

@@ -60,6 +60,18 @@
                 <h2>Escolha um tipo de arte</h2>
                 <p>Escolha uma das opções para descobrir qual é o melhor museu ou teatro indicado para você.
                 </p>
+                <select id="in_escolha">
+                    <option value="0">- Selecione uma opção -</option>
+                    <option value="1">Quadros/Pinturas</option>
+                    <option value="2">Experiências audiovisuais</option>
+                    <option value="3">Esculturas</option>
+                    <option value="4">Teatro/Música/Dança</option>
+                </select><br><br>
+                <button id="btn_resultado" onclick="resultado()">Ver resultado</button><br><br>
+                <button id="btn_resultado" onclick="limpar()">Apagar resultado</button><br><br>
+                <div id="div_resposta" style="color: blue;"></div><br>
+                <img  id="img_ftperfil" style="height: 200px;">
+
             </div>
             <div class="assunto">
                 <h2>Escolha um tipo de tecnologia</h2>
@@ -73,7 +85,7 @@
      <div class="nosso-time">
         <div class="container">
             <h2>Principais Museus e theatros de São Paulo</h2>
-            <h3>Clique sobre a foto do museu ou theatro para ter acesso ao site</h3>
+            <h3 id="#museus">Clique sobre a foto do museu ou theatro para ter acesso ao site</h3>
             <div class="integrantes">
                 <div class="integrante">
                    <a href="https://masp.org.br/" target="_blank"><img src="img/masp.jpg"></a> 
@@ -145,3 +157,41 @@
 </body>
 </html>
 
+<script>
+    function resultado() {
+        var perfil = in_escolha.value;
+
+        if (perfil == "1") {
+            div_resposta.innerHTML = `O Museu indicado para você é o MASP.
+            Você pode acessar o site deste museu na sessão -> 
+            Principais Museus e Theatros de São Paulo`; 
+            img_ftperfil.src = 'img/masp.jpg';
+
+        } else if (perfil == "2") {
+            div_resposta.innerHTML = `O Museu indicado para você é o MIS.
+            Você pode acessar o site deste museu na sessão -> 
+            Principais Museus e Theatros de São Paulo`; 
+            img_ftperfil.src = 'img/mis.jpg';
+
+        } else if (perfil == "3") {
+            div_resposta.innerHTML = `O Museu indicado para você é a PINACOTECA.
+            Você pode acessar o site deste museu na sessão -> 
+            Principais Museus e Theatros de São Paulo`; 
+            img_ftperfil.src = 'img/pinacoteca.jpg';
+
+        } else if (perfil == "4") {
+            div_resposta.innerHTML = `O Museu indicado para você é o THEATRO MUNICIPAL DE SÃO PAULO.
+            Você pode acessar o site deste teatro na sessão -> 
+            Principais Museus e Theatros de São Paulo`; 
+            img_ftperfil.src = 'img/teatrom.jpg';
+        }else{
+            alert("Insira alguma opção!");
+        }
+    }
+
+    function limpar(){
+        in_escolha.value = '';
+        div_resposta.innerHTML = '';
+        img_ftperfil.src = '';
+    }
+</script>

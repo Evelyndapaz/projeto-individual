@@ -1,13 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proj. Individual | Meu nome aqui</title>
+    <title>Proj-Evelyn</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/perfil_sobre.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600&family=Jura:wght@700&display=swap"
+      rel="stylesheet">
     <script src="https://kit.fontawesome.com/48b24e7021.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="funcoes.js"></script>
+    
 </head>
+ 
+
+<body>
+    <!--header inicio-->
+    <div class="header">
+        <div class="container">
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Sobre</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="meu_cadastro.html">Cadastro</a></li>
+                    <li><a href="sobre.html">Perfil/sobre</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--header fim-->
+
 <script>
 
     let usuario;
@@ -20,11 +43,10 @@
     <!--header inicio-->
     <div class="header">
         <div class="container">
-            <h1 class="titulo">meu <span class="highlight">projeto</span> individual</h1>
-            <div class="nav">
+            <div class="nav_sobre">
                 <ul>
-                    <li>Olá, <b id="b_usuario"></b></li>
-                    <li><a href="" onclick="logoff()">LOGOUT</a></li>
+                    <li>Olá, seja bem vindo(a) ao seu cantinho da arte!<b id="b_usuario"></b></li>
+                    <li><a href="login.html" onclick="logoff()">LOGOUT</a></li>
                 </ul>
             </div>
         </div>
@@ -35,12 +57,13 @@
     <div class="assuntos">
         <div class="container">
             <div class="assunto">
-                <h2>Assunto 1</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium tempora architecto sint fugit dolorum? Ipsum laborum magnam similique labore, voluptate amet reprehenderit rem ab blanditiis quisquam laboriosam eaque alias. Reiciendis.</p>
+                <h2>Escolha um tipo de arte</h2>
+                <p>Escolha uma das opções para descobrir qual é o melhor museu ou teatro indicado para você.
+                </p>
             </div>
             <div class="assunto">
-                <h2>Assunto 2</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium tempora architecto sint fugit dolorum? Ipsum laborum magnam similique labore, voluptate amet reprehenderit rem ab blanditiis quisquam laboriosam eaque alias. Reiciendis.</p>
+                <h2>Escolha um tipo de tecnologia</h2>
+                <p>Clique em uma das imagens para saber mais sobre determinada tecnologia.</p>
             </div>
         </div>
     </div>
@@ -49,33 +72,53 @@
      <!--nosso time inicio-->
      <div class="nosso-time">
         <div class="container">
-            <h2>Minhas inspirações</h2>
+            <h2>Principais Museus e theatros de São Paulo</h2>
+            <h3>Clique sobre a foto do museu ou theatro para ter acesso ao site</h3>
             <div class="integrantes">
                 <div class="integrante">
-                    <img src="img/av1.png">
-                    <h4>um ídolo aqui</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                   <a href="https://masp.org.br/" target="_blank"><img src="img/masp.jpg"></a> 
+                    <h4>MASP</h4>
                 </div>
                 <div class="integrante">
-                    <img src="img/av2.png">
-                    <h4>um ídolo aqui</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="https://www.mis-sp.org.br/" target="_blank"><img src="img/mis.jpg"></a>
+                    <h4>MIS</h4>
                 </div>
                 <div class="integrante">
-                    <img src="img/av3.png">
-                    <h4>um ídolo aqui</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="http://pinacoteca.org.br/" target="_blank"><img src="img/pinacoteca.jpg"></a>
+                    <h4>PINACOTECA</h4>
                 </div>
                 <div class="integrante">
-                    <img src="img/av4.png">
-                    <h4>um ídolo aqui</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="https://mam.org.br/" target="_blank"><img src="img/mam.jpg"></a>
+                    <h4>MAM</h4>
                 </div>
                 <div class="integrante">
-                    <img src="img/av5.png">
-                    <h4>um ídolo aqui</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="http://www.mac.usp.br/mac/" target="_blank"><img src="img/mac.jpg"></a>
+                    <h4>MAC</h4>
                 </div>
+            </div>
+        </div>
+     </div>
+     <!--nosso time fim-->
+     <div class="nosso-time">
+        <div class="container">
+            <div class="integrantes">
+                <div class="integrante">
+                    <a href="https://www.bb.com.br/pbb/pagina-inicial/sobre-nos/cultura/ccbb#/" target="_blank"><img src="img/ccbb.jpg"></a>
+                    <h4>CCBB</h4>
+                </div>
+                <div class="integrante">
+                    <a href="https://www.itaucultural.org.br/" target="_blank"><img src="img/itau.jpg"></a>
+                    <h4>ITAÚ CULTURAL</h4>
+                </div>
+                <div class="integrante">
+                    <a href="https://theatromunicipal.org.br/pt-br/" target="_blank"><img src="img/teatrom.jpg"></a>
+                    <h4>THEATRO MUNICIPAL</h4>
+                </div>
+                <div class="integrante">
+                    <a href="https://theatrosaopedro.org.br/" target="_blank"><img src="img/teatros.jpg"></a>
+                    <h4>THEATRO SÃO PEDRO</h4>
+                </div>
+                
             </div>
         </div>
      </div>

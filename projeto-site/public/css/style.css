@@ -27,9 +27,30 @@ body {
 .titulo {
     margin: 0;
     padding: 0;
-    color: black;
+    text-align: center;
+    animation-name: titulo;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    
 }
 
+@keyframes titulo {
+    0% {
+        color: rgb(14, 0, 206);
+    }
+    25% {
+        color: rgb(135, 24, 199);
+      }
+    50% {
+      color: rgb(158, 2, 197);
+    }
+    75% {
+        color: rgb(204, 6, 128);
+      }
+    100% {
+      color: rgb(98, 0, 255);
+    }
+  }
 /* CABEÇALHO - HEADER*/
 .header {
     background-color: black;

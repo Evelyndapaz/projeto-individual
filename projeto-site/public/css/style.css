@@ -140,6 +140,13 @@ body {
 
 .box .box-item img {
     height: 100px;
+    border-radius: 100px;
+}
+
+.box .box-item p {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 17px;
 }
 
 /* FOOTER FINAL DO INDEX- PARTE */

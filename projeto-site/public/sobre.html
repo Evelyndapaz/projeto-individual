@@ -24,7 +24,7 @@
                     <li><a href="index.html">Sobre</a></li>
                     <li><a href="login.html">Login</a></li>
                     <li><a href="meu_cadastro.html">Cadastro</a></li>
-                    <li><a href="sobre.html">Perfil/sobre</a></li>
+                   
                 </ul>
             </div>
         </div>
@@ -69,13 +69,29 @@
                 </select><br><br>
                 <button id="btn_resultado" onclick="resultado()">Ver resultado</button><br><br>
                 <button id="btn_resultado" onclick="limpar()">Apagar resultado</button><br><br>
-                <div id="div_resposta" style="color: blue;"></div><br>
+                <div id="div_resposta" style="color: blue; display: none;"></div><br>
                 <img  id="img_ftperfil" style="height: 200px;">
 
             </div>
             <div class="assunto">
-                <h2>Escolha um tipo de tecnologia</h2>
-                <p>Clique em uma das imagens para saber mais sobre determinada tecnologia.</p>
+                <h2>Escolha um botão surpresa</h2>
+                <p>Clique em um dos botões abaixo das imagens para saber um pouco sobre determinada tecnologia.</p>
+                <div class="img_assunto">
+                <img src="img/svg.svg" style="height: 100px;"></a>
+                <img src="img/impressora-3d.svg" style="height: 100px;"></a>
+                <img src="img/visao-360.svg" style="height: 100px;"></a><br><br>
+
+                <button id="btn_imgum" onclick="imgum()">Primeira imagem</button><br><br>
+                <button id="btn_imgdois" onclick="imgdois()">Segunda imagem</button><br><br>
+                <button id="btn_imgtres" onclick="imgtres()">Terceira imagem</button><br><br>
+
+                <button id="btn_limpar" onclick="limpardois()" >Apagar resultado</button><br><br>
+
+                <div id="div_respostadois" style="color: blue;"></div><br>
+                
+            </div>
+                
+                
             </div>
         </div>
     </div>
@@ -140,8 +156,9 @@
     <div class="assuntos">
         <div class="container">
             <div class="assunto-grande">
-                <h2>Assunto 3</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium tempora architecto sint fugit dolorum? Ipsum laborum magnam similique labore, voluptate amet reprehenderit rem ab blanditiis quisquam laboriosam eaque alias. Reiciendis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium tempora architecto sint fugit dolorum? Ipsum laborum magnam similique labore, voluptate amet reprehenderit rem ab blanditiis quisquam laboriosam eaque alias. Reiciendis.</p>
+                <h2>Mensagem</h2>
+                <p>A arte diz o indizível; exprime o inexprimível; traduz o intraduzível.
+                    (Leonardo Da Vinci)</p>
             </div>
         </div>
     </div>
@@ -194,4 +211,32 @@
         div_resposta.innerHTML = '';
         img_ftperfil.src = '';
     }
+
+
+    function imgum(){
+        div_respostadois.innerHTML = `SVG (Scalable Vector Graphics) é uma linguagem para criação de gráficos
+Ela pode ser usada para imagens estáticas, e também para animações e interfaces de usuário.
+Como outras linguagens, SVG suporta folhas de estilo CSS então você pode 
+separar o estilo de seu conteúdo.`;}
+
+    function imgdois(){
+        div_respostadois.innerHTML = `A Impressão 3D, também conhecida como prototipagem rápida, 
+        é uma forma de tecnologia de fabricação aditiva onde um modelo tridimensional é criado
+         por sucessivas camadas de material.[1] Por não necessitar do uso de moldes e permitir 
+         produzir formas que não são viáveis em outros métodos de produção, tem algumas vantagens 
+         em relação a outras tecnologias de fabricação, como por exemplo a injeção de plástico, 
+         sendo mais rápida e mais barata para fabricação de pequenas tiragens.`;
+    }
+    function imgtres(){
+        div_respostadois.innerHTML = `O Tour Virtual é uma maneira inovadora e imersiva
+         de mostrar o ambiente em todos os ângulos aos visitantes. O objetivo principal 
+         dessa tecnologia é levar o indivíduo a conhecer o local sem que ele precise ir
+          fisicamente ao mesmo e possibilita criar ao máximo a sensação de realidade do espaço.`;
+
+    }
+    function limpardois(){
+        div_respostadois.innerHTML = ``;
+    }
+
+
 </script>
